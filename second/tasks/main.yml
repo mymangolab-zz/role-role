@@ -1,0 +1,10 @@
+---
+# tasks file for second
+- name: Print Good Afternoon
+  debug:
+    msg: "Good Afternoon"
+
+- name: Print Good Evening
+  debug:
+    msg: "Good Evening"
+  when: gm.msg == "Good Morning"

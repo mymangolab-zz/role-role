@@ -1,0 +1,6 @@
+---
+# tasks file for first
+- name: Print Good Morning
+  debug:
+    msg: "Good Morning"
+  register: gm

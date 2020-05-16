@@ -1,0 +1,14 @@
+---
+- name: Hello Hello
+  hosts: localhost
+  ignore_errors: yes
+  gather_facts: no
+  tasks:
+  - name: Print Welcome Message
+    include_role:
+      name: "{{ item }}"
+    with_items:
+      - first
+      - second
+      - third
+
